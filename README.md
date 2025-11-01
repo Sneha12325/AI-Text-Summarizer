@@ -1,15 +1,7 @@
-# 🧠 AI Text Summarizer
+## 🚀 AI Text Summarizer (Deployed)
+Fast, lightweight AI summarization web app built using Gradio + FastAPI.
+- Model: `facebook/bart-large-cnn`
+- Deployment: Hugging Face Spaces
+- UI: Minimal dark theme for clean UX
 
-A Flask-based web app that uses Hugging Face Transformers to summarize text.
-
-## 🚀 Features
-- Summarizes any text using BART or T5 models
-- Simple Flask UI for text input
-- Docker support for deployment
-
-## 🛠️ How to Run
-```bash
-git clone https://github.com/Sneha12325/AI-Text-Summarizer.git
-cd AI-Text-Summarizer
-pip install -r requirements.txt
-python app.py
+🔗 [Live Demo](https://huggingface.co/spaces/Sneha7676P/ai-summarizer-fast)
