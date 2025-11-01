@@ -1,64 +1,46 @@
-# 🧠 AI Text Summarizer
+# 🧠 AI Text Summarizer (Fast Version)
 
-An AI-powered web application that summarizes long text passages using a **Transformer model (BART-Large-CNN)**.  
-Originally built with **Flask**, this project was later optimized with **FastAPI + Gradio** for faster deployment and smoother inference.
+A lightning-fast **AI-powered text summarization app** built using **Gradio + FastAPI + Transformers**.  
+This version is optimized for deployment speed and simplicity — perfect for demos, recruiters, and backend showcases.  
 
----
-
-## 🚀 Demo
-👉 **[Live App on Hugging Face](https://huggingface.co/spaces/Sneha7676P/ai-summarizer-fast)**  
-*(FastAPI + Gradio version — loads under 10 seconds!)*
+🚀 **Live Demo:** [AI Summarizer on Hugging Face](https://huggingface.co/spaces/Sneha7676P/ai-summarizer-fast)
 
 ---
 
-## 🧩 Project Versions
+## 💡 About the Project
 
-### 1️⃣ Flask Version (Full UI/UX)
-- Complete backend architecture (600+ lines of production-ready Flask code)
-- Custom HTML/CSS/JS templates for better user experience
-- Includes:
-  - Redis caching
-  - Logging and rate limiting
-  - Modularized routes and configuration
-- Great for demonstrating **full-stack backend design skills**
+This app takes long pieces of text and generates concise, meaningful summaries using a transformer-based model from Hugging Face (`facebook/bart-large-cnn`).
 
-### 2️⃣ FastAPI + Gradio Version (Optimized for Speed)
-- Lightweight rewrite focused on **performance and simplicity**
-- Built with **FastAPI** backend and **Gradio** interface
-- Deploys instantly on Hugging Face Spaces
-- Simplified dependencies → no Redis, no template rendering
+### 🔍 Features
+- ⚡ **Fast API response** using Gradio + FastAPI combo  
+- 🧠 **Transformer-based summarization** (BART model)  
+- 🖥️ **Clean minimal UI** powered by Gradio  
+- ☁️ **Fully deployed on Hugging Face Spaces**  
+- 🧩 **Easily extendable** for multi-language or abstractive summarization  
 
 ---
 
-## ⚙️ Tech Stack
+## 🧩 Tech Stack
 
-| Layer | Technologies |
-|-------|---------------|
-| **Frontend/UI** | Flask Templates (HTML, CSS, JS), Gradio |
-| **Backend** | Flask → FastAPI |
-| **Model** | Hugging Face Transformers (BART-Large-CNN) |
-| **Deployment** | Hugging Face Spaces |
-| **Optional Tools** | Redis, Gunicorn, Pipenv, Logging, Caching |
-
----
-
-## 🧠 Model Used
-
-- **Model:** `facebook/bart-large-cnn`  
-- **Task:** Text Summarization  
-- The model takes long text and outputs a concise summary while preserving key context.
+| Component | Technology |
+|------------|-------------|
+| Backend | FastAPI |
+| UI | Gradio |
+| ML Model | Facebook BART-Large-CNN |
+| Hosting | Hugging Face Spaces |
+| Version Control | Git + GitHub + HF Hub |
 
 ---
 
-## 💡 Key Features
+## ⚙️ How to Run Locally
 
-- Summarize large paragraphs or documents in seconds
-- Clean and minimal UI (Gradio) for fast testing
-- Full production-grade Flask version available for code review
-- Hugging Face integration for easy public access
+```bash
+# 1. Clone this repository
+git clone https://huggingface.co/spaces/Sneha7676P/ai-summarizer-fast
+cd ai-summarizer-fast
 
----
+# 2. Install dependencies
+pip install -r requirements.txt
 
-## 🔍 Architecture Overview
-
-**Flask Version:**
+# 3. Run the app
+python app.py
