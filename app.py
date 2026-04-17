@@ -49,10 +49,10 @@ class ModelManager:
             logger.info("Loading BART model...")
             start = time.time()
             self._model = pipeline(
-                "summarization",
-                model="facebook/bart-large-cnn",
-                device=-1  # Use CPU, change to 0 for GPU
-            )
+    "text2text-generation",
+    model="facebook/bart-large-cnn",
+    device=-1
+)
             logger.info(f"Model loaded in {time.time() - start:.2f}s")
         return self._model
 
@@ -185,7 +185,7 @@ def generate_summary(text, length='medium'):
         )
         
         inference_time = time.time() - start_time
-        summary_text = result[0]['summary_text']
+        summary_text = result[0]['generated_text']
         
         # Prepare response
         response = {
